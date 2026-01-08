@@ -37,7 +37,7 @@ function App() {
   return (
     <div className="flex flex-col w-full p-2">
       <Card className="h-[800px] p-0 overflow-hidden">
-        <Map center={[37.261402, -1.5382198]} zoom={8}>
+        <Map center={[37.261402, -1.5382198]} zoom={14}>
           <MapControls
             position="top-left"
             showZoom
@@ -53,13 +53,13 @@ function App() {
               latitude={location.lat}
             >
               <MarkerContent>
-                <div className="size-4 rounded-full bg-primary border-2 border-white shadow-lg" />
+                <div className="size-4 rounded-full bg-green-500 border-2 border-white shadow-lg" />
               </MarkerContent>
               <MarkerTooltip>{location.name}</MarkerTooltip>
               <MarkerPopup>
                 <div className="space-y-1">
-                  <p className="font-medium text-foreground">{location.name}</p>
-                  <p className="text-xs text-muted-foreground">
+                  <p className="font-medium text-white">{location.name}</p>
+                  <p className="text-xs text-white">
                     {location.lat.toFixed(4)}, {location.lng.toFixed(4)}
                   </p>
                 </div>
