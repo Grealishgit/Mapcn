@@ -9,7 +9,14 @@ function App() {
     <div className="flex flex-col w-full p-2">
       <Card className="h-[800px] p-0 overflow-hidden">
         <Map center={[1.5199, 37.2672]} zoom={11}>
-          <MapControls />
+          <MapControls
+            position="top-left"
+            showZoom
+            showCompass
+            showLocate
+            showFullscreen
+          />
+
         </Map>
       </Card>
     </div>
