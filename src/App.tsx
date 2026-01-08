@@ -2,6 +2,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import MainMap from './pages/MainMap'
+import { MiniMaps } from './pages/MiniMaps'
 
 function App() {
 
@@ -11,7 +12,8 @@ function App() {
     <>
       <Routes>
         {/* Define your routes here */}
-        <Route path="/" element={<MainMap />} />
+        <Route path="/map" element={<MainMap />} />
+        <Route path="/" element={<MiniMaps />} />
       </Routes>
     </>
   )
