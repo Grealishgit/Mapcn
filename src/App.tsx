@@ -1,5 +1,5 @@
 
-import React from 'react'
+// import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import MainMap from './pages/MainMap'
 import { MiniMaps } from './pages/MiniMaps'
