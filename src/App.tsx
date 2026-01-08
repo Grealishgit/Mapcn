@@ -1,13 +1,19 @@
 
 import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import MainMap from './pages/MainMap'
 
 function App() {
 
 
 
   return (
-    <div>
-    </div>
+    <>
+      <Routes>
+        {/* Define your routes here */}
+        <Route path="/" element={<MainMap />} />
+      </Routes>
+    </>
   )
 }
 
